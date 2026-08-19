@@ -1,0 +1,71 @@
+.page-banner {
+  position: relative;
+  padding: 160px 0 70px;
+  overflow: hidden;
+  background: var(--c-primary);
+}
+
+.page-banner-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.05);
+  animation: banner-zoom 12s ease-out forwards;
+}
+@keyframes banner-zoom { to { transform: scale(1); } }
+
+.page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(10,20,36,0.92) 0%, rgba(10,30,63,0.7) 50%, rgba(10,20,36,0.85) 100%);
+}
+
+.page-banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-crumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.page-crumbs a {
+  color: rgba(255,255,255,0.75);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+.page-crumbs a:hover { color: var(--c-accent); }
+.page-crumb { display: inline-flex; align-items: center; gap: 6px; }
+
+.page-banner-title {
+  color: #fff;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  max-width: 760px;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+}
+.page-banner-title.in { opacity: 1; transform: none; }
+
+.page-banner-sub {
+  color: rgba(255,255,255,0.78);
+  font-size: 1.08rem;
+  margin-top: 14px;
+  max-width: 620px;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease 0.25s, transform 0.7s ease 0.25s;
+}
+.page-banner-sub.in { opacity: 1; transform: none; }
+
+@media (max-width: 768px) {
+  .page-banner { padding: 130px 0 52px; }
+}

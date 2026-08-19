@@ -1,0 +1,168 @@
+.contact-section { background: #fff; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-info {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.contact-info.in { opacity: 1; transform: none; }
+
+.contact-side {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.7s ease 0.15s, transform 0.7s ease 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.contact-side.in { opacity: 1; transform: none; }
+
+.contact-lead {
+  color: var(--c-text-light);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-top: 18px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 22px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+  border-color: var(--c-accent-2);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(56,189,248,0.14), rgba(45,106,159,0.08));
+  color: var(--c-primary);
+  flex-shrink: 0;
+}
+
+.contact-card-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+  margin-bottom: 6px;
+}
+
+.contact-card p { font-size: 0.95rem; color: var(--c-text); line-height: 1.5; }
+
+.contact-phone-link,
+.contact-email-link {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--c-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  margin-top: 2px;
+}
+.contact-phone-link:hover,
+.contact-email-link:hover { color: var(--c-accent-2); }
+
+.contact-quick-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+/* Map */
+.contact-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  height: 280px;
+}
+.contact-map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Hours */
+.contact-hours {
+  background: var(--c-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 26px;
+}
+
+.contact-hours-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  color: var(--c-primary);
+}
+.contact-hours-header h3 { font-size: 1.15rem; font-weight: 700; }
+.contact-hours-header svg { color: var(--c-accent-2); }
+
+.hours-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+.hours-item.today {
+  background: var(--c-accent);
+  color: var(--c-primary);
+  font-weight: 700;
+}
+.hours-item.closed .hours-time { color: var(--c-error); }
+.hours-item.today.closed .hours-time { color: var(--c-error); }
+.hours-day { font-weight: 600; }
+.hours-time { color: var(--c-text-light); }
+.hours-item.today .hours-time { color: var(--c-primary); }
+
+/* Brand strip */
+.contact-brand {
+  background: var(--c-light);
+  border-top: 1px solid var(--c-border);
+}
+.contact-brand-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.contact-brand-text { flex: 1; min-width: 200px; }
+.contact-brand-text h3 { font-size: 1.2rem; font-weight: 800; color: var(--c-primary); letter-spacing: 0.04em; }
+.contact-brand-text p { font-size: 0.88rem; color: var(--c-text-light); margin-top: 4px; }
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-info, .contact-side { transform: translateY(24px); }
+  .contact-info.in, .contact-side.in { transform: none; }
+}
+@media (max-width: 600px) {
+  .contact-quick-actions { flex-direction: column; align-items: stretch; }
+  .contact-quick-actions .btn { justify-content: center; }
+  .contact-brand-inner { flex-direction: column; text-align: center; }
+}
