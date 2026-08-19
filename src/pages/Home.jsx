@@ -58,8 +58,8 @@ export default function Home() {
             </div>
           </div>
           <div className={`intro-content ${introReveal.shown ? 'in' : ''}`}>
-            <span className="eyebrow">About Shaswat Glass</span>
-            <h2 className="section-title">SHASWAT GLASS SOLUTION PVT. LTD. </h2>
+            <span className="eyebrow">About </span>
+            <h2 className="section-title">Shaswat Glass Solution Pvt. Ltd. </h2>
             <p className="intro-text">{company.intro}</p>
             <ul className="intro-list">
               <li><CheckCircle2 size={18} /> Quality &amp; precision in every unit</li>
