@@ -1,4 +1,4 @@
-import logoImage from "../images/shaswat-logo.jpg"
+import logoImage from "../images/shaswat-logo.png"
 
 export default function Logo({ variant = 'dark', className = '' }) {
   return (
@@ -13,8 +13,8 @@ export default function Logo({ variant = 'dark', className = '' }) {
         src={logoImage}
         alt="Shaswat Glass Solution"
         style={{
-          width: '38px',
-          height: '38px',
+          width: '120px',
+          height: '120px',
           objectFit: 'contain',
           display: 'block',
         }}

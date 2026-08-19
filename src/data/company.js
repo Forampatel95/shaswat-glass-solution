@@ -10,7 +10,7 @@ export const company = {
     line2: '385510, India',
     full: 'Palanpur, Gujarat – 385510, India',
   },
-  phones: ['09106866268', '9725716520', '9898390824'],
+  phones: ['9106866268', '9725716520', '9898390824'],
   primaryPhone: '9106866268',
   whatsapp: '919106866268',
   whatsappMessage:
