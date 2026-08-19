@@ -43,7 +43,7 @@ export const company = {
 
 export const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Aboutssss', to: '/about' },
+  { label: 'About', to: '/about' },
   { label: 'Products', to: '/products' },
   { label: 'Applications', to: '/applications' },
   { label: 'Projects', to: '/projects' },
