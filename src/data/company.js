@@ -4,7 +4,7 @@ export const company = {
   tagline: 'TRUST THE BEST',
   brandStatement: 'Glass Excellence — Crafting Excellence in Glass Processing',
   intro:
-    'Shaswat Glass Solution is a professional glass processing company based in Palanpur, Gujarat, providing high-quality glass solutions for residential, commercial and architectural applications.',
+    ' <strong>Shaswat Glass Solution</strong> is a professional glass processing company based in Palanpur, Gujarat, providing high-quality glass solutions for residential, commercial and architectural applications.',
   address: {
     line1: 'Palanpur, Gujarat',
     line2: '385510, India',

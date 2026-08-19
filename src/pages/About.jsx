@@ -29,8 +29,8 @@ export default function About() {
   return (
     <>
       <PageBanner
-        title="About Shaswat Glass Solution"
-        subtitle="A professional glass processing company dedicated to quality, performance and architectural excellence."
+        // title="About Shaswat Glass Solution"
+        // subtitle="A professional glass processing company dedicated to quality, performance and architectural excellence."
         image="https://images.pexels.com/photos/11861957/pexels-photo-11861957.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'About', to: '/about' }]}
       />
