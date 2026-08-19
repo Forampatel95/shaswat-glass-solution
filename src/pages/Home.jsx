@@ -60,7 +60,7 @@ export default function Home() {
           <div className={`intro-content ${introReveal.shown ? 'in' : ''}`}>
             <span className="eyebrow">About </span>
             <h2 className="section-title">Shaswat Glass Solution Pvt. Ltd. </h2>
-            <p className="intro-text">{company.intro}</p>
+            <p className="intro-text"><b>Shaswat Glass Solution</b> is a professional glass processing company based in Palanpur, Gujarat, providing high-quality glass solutions for residential, commercial and architectural applications.</p>
             <ul className="intro-list">
               <li><CheckCircle2 size={18} /> Quality &amp; precision in every unit</li>
               <li><CheckCircle2 size={18} /> Reliable, on-time project delivery</li>
