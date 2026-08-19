@@ -59,8 +59,8 @@ export default function Gallery() {
   return (
     <>
       <PageBanner
-        title="Gallery"
-        subtitle="A visual showcase of architectural glass, interiors, facades, products and our processing work."
+        // title="Gallery"
+        // subtitle="A visual showcase of architectural glass, interiors, facades, products and our processing work."
         image="https://images.pexels.com/photos/21937726/pexels-photo-21937726.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Gallery', to: '/gallery' }]}
       />

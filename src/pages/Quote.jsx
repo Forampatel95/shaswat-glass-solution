@@ -94,8 +94,8 @@ export default function Quote() {
   return (
     <>
       <PageBanner
-        title="Request a Quote"
-        subtitle="Tell us about your project and glass requirements. Our team will get back to you with a tailored quote."
+        // title="Request a Quote"
+        // subtitle="Tell us about your project and glass requirements. Our team will get back to you with a tailored quote."
         image="https://images.pexels.com/photos/26241922/pexels-photo-26241922.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Quote', to: '/quote' }]}
       />

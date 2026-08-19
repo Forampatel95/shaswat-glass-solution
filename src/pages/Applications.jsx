@@ -41,8 +41,8 @@ export default function Applications() {
   return (
     <>
       <PageBanner
-        title="Glass Solutions for Every Space"
-        subtitle="From residential interiors to large-scale architectural facades, our glass products serve diverse applications across multiple sectors."
+        // title="Glass Solutions for Every Space"
+        // subtitle="From residential interiors to large-scale architectural facades, our glass products serve diverse applications across multiple sectors."
         image="https://images.pexels.com/photos/37320179/pexels-photo-37320179.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Applications', to: '/applications' }]}
       />

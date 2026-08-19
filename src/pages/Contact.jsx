@@ -16,8 +16,8 @@ export default function Contact() {
   return (
     <>
       <PageBanner
-        title="Let's Build Better with Glass"
-        subtitle="Get in touch with Shaswat Glass Solution for your glass processing requirements. We're here to help."
+        // title="Let's Build Better with Glass"
+        // subtitle="Get in touch with Shaswat Glass Solution for your glass processing requirements. We're here to help."
         image="https://images.pexels.com/photos/934350/pexels-photo-934350.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Contact', to: '/contact' }]}
       />

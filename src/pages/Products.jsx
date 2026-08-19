@@ -18,8 +18,8 @@ export default function Products() {
   return (
     <>
       <PageBanner
-        title="Our Product Offerings"
-        subtitle="Smart glass solutions for safer, cooler and more beautiful spaces — engineered for modern architecture."
+        // title="Our Product Offerings"
+        // subtitle="Smart glass solutions for safer, cooler and more beautiful spaces — engineered for modern architecture."
         image="https://images.pexels.com/photos/32613903/pexels-photo-32613903.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Products', to: '/products' }]}
       />

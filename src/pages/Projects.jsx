@@ -36,8 +36,8 @@ export default function Projects() {
   return (
     <>
       <PageBanner
-        title="Notable Projects"
-        subtitle="A showcase of our glass processing and installation work across residential, commercial, industrial and architectural projects."
+        // title="Notable Projects"
+        // subtitle="A showcase of our glass processing and installation work across residential, commercial, industrial and architectural projects."
         image="https://images.pexels.com/photos/1438037/pexels-photo-1438037.jpeg?auto=compress&cs=tinysrgb&h=800&w=1600"
         crumbs={[{ label: 'Projects', to: '/projects' }]}
       />

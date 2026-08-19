@@ -22,8 +22,8 @@ export default function ProductDetails() {
   return (
     <>
       <PageBanner
-        title={product.name}
-        subtitle={product.tagline}
+        // title={product.name}
+        // subtitle={product.tagline}
         image={product.image}
         crumbs={[
           { label: 'Products', to: '/products' },
