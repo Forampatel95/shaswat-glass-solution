@@ -1,4 +1,4 @@
-import logoImage from "../images/shaswat-logo.png"
+import logoImage from "../images/logo.png"
 
 export default function Logo({ variant = 'dark', className = '' }) {
   return (
